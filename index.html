@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>[STUDIO NAME] | Bespoke Luxury Tattoo Atelier</title>
+  <meta
+    name="description"
+    content="[STUDIO NAME] — Private luxury tattoo studio specializing in custom fine art, realism, and bespoke ink in [CITY/LOCATION]."
+  />
+
+  <!-- Google Fonts: Cinzel (Editorial Serif) & Plus Jakarta Sans (Clean Modern Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- PRELOADER -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-inner">
+      <p class="preloader-title" data-bind="name">[STUDIO NAME]</p>
+      <div class="preloader-bar">
+        <div class="preloader-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header id="navbar" class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo" data-bind="name">[STUDIO NAME]</a>
+
+      <nav class="nav-links">
+        <a href="#about">Atelier</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#" class="btn btn-outline-gold whatsapp-link" target="_blank" rel="noopener noreferrer">
+          <span>Book Session</span>
+          <i data-lucide="arrow-up-right"></i>
+        </a>
+      </div>
+
+      <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle Menu">
+        <i data-lucide="menu" id="menu-icon"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobile-nav" class="mobile-nav">
+      <a href="#about" class="mobile-link">Atelier</a>
+      <a href="#services" class="mobile-link">Services</a>
+      <a href="#portfolio" class="mobile-link">Portfolio</a>
+      <a href="#reviews" class="mobile-link">Reviews</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+      <a href="#" class="btn btn-gold whatsapp-link mobile-cta" target="_blank" rel="noopener noreferrer">
+        Book Your Appointment
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HERO SECTION -->
+    <section id="hero" class="hero">
+      <div class="hero-bg" id="hero-parallax">
+        <img
+          src="https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?auto=format&fit=crop&w=2000&q=85"
+          alt="Luxury Tattoo Studio"
+        />
+        <div class="hero-overlay"></div>
+        <div class="hero-vignette"></div>
+      </div>
+      <div class="ambient-glow"></div>
+
+      <div class="container hero-content">
+        <div class="hero-badge reveal-up">
+          <span class="gold-dot"></span>
+          <span data-bind="tagline">[BESPOKE INK & FINE ART ATELIER]</span>
+        </div>
+
+        <h1 class="hero-title reveal-up delay-1" data-bind="name">[STUDIO NAME]</h1>
+        <p class="hero-subtitle reveal-up delay-2" data-bind="headline">SKIN AS LIVING ARCHITECTURE</p>
+        <p class="hero-description reveal-up delay-3" data-bind="subheadline">
+          [STUDIO DESCRIPTION PLACEHOLDER — A private, appointment-driven tattoo studio dedicated to timeless custom artistry, anatomical precision, and hospital-grade sterilization.]
+        </p>
+
+        <div class="hero-ctas reveal-up delay-4">
+          <a href="#portfolio" class="btn btn-gold">
+            <span>Explore Our Work</span>
+            <i data-lucide="arrow-down-right"></i>
+          </a>
+          <a href="#" class="btn btn-glass whatsapp-link" target="_blank" rel="noopener noreferrer">
+            <i data-lucide="calendar" class="icon-gold"></i>
+            <span>Book Your Appointment</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT THE STUDIO -->
+    <section id="about" class="section bg-obsidian">
+      <div class="container about-grid">
+        <div class="about-media reveal-left">
+          <div class="about-image-frame">
+            <img
+              src="https://images.unsplash.com/photo-1565058379802-bbe93b2f703a?auto=format&fit=crop&w=1000&q=85"
+              alt="Tattoo Craftsmanship"
+            />
+            <div class="image-gradient-bottom"></div>
+          </div>
+          <div class="experience-badge">
+            <span class="exp-number" data-bind="yearsExperience">[XX+]</span>
+            <span class="exp-label">Years of Artistry</span>
+          </div>
+        </div>
+
+        <div class="about-text reveal-up">
+          <p class="section-eyebrow">01 — The Atelier</p>
+          <h2 class="section-title" data-bind="aboutHeading">Where Fine Art Meets Permanent Craft</h2>
+          <div class="gold-divider"></div>
+
+          <div class="about-paragraphs" id="about-paragraphs">
+            <!-- Populated via script.js -->
+          </div>
+
+          <div class="standards-grid">
+            <div class="standard-item">
+              <i data-lucide="shield-check" class="icon-gold"></i>
+              <div>
+                <h3>Sterile Protocol</h3>
+                <p>100% single-use needles & medical-grade sanitation.</p>
+              </div>
+            </div>
+            <div class="standard-item">
+              <i data-lucide="compass" class="icon-gold"></i>
+              <div>
+                <h3>Custom Drafted</h3>
+                <p>Original designs tailored to body flow & anatomy.</p>
+              </div>
+            </div>
+            <div class="standard-item">
+              <i data-lucide="sparkles" class="icon-gold"></i>
+              <div>
+                <h3>Archival Pigments</h3>
+                <p>Premium vegan inks engineered for longevity.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. TATTOO SERVICES -->
+    <section id="services" class="section bg-charcoal border-y">
+      <div class="container">
+        <div class="section-header-flex reveal-up">
+          <div>
+            <p class="section-eyebrow">02 — Disciplines & Specialties</p>
+            <h2 class="section-title">Tattoo Services</h2>
+          </div>
+          <p class="section-lead">
+            Every commission begins with an in-depth design consultation to align concept, placement, and technique.
+          </p>
+        </div>
+
+        <div class="services-grid" id="services-grid">
+          <!-- Populated via script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. TATTOO PORTFOLIO -->
+    <section id="portfolio" class="section bg-obsidian">
+      <div class="container">
+        <div class="section-header-flex reveal-up">
+          <div>
+            <p class="section-eyebrow">03 — Selected Archive</p>
+            <h2 class="section-title">Curated Portfolio</h2>
+          </div>
+
+          <div class="filter-bar" id="portfolio-filters">
+            <!-- Populated via script.js -->
+          </div>
+        </div>
+
+        <div class="portfolio-grid" id="portfolio-grid">
+          <!-- Populated via script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. WHY CHOOSE US -->
+    <section id="ethos" class="section bg-charcoal border-y">
+      <div class="container">
+        <div class="section-header-center reveal-up">
+          <p class="section-eyebrow">04 — Studio Ethos</p>
+          <h2 class="section-title">The Standard of Permanence</h2>
+        </div>
+
+        <div class="ethos-grid">
+          <div class="ethos-card reveal-up">
+            <div class="ethos-icon"><i data-lucide="pen-tool"></i></div>
+            <h3>Bespoke Artistic Direction</h3>
+            <p>No flash-sheet repetition. Every composition is custom-illustrated from scratch to harmonize with your musculature and skin tone.</p>
+          </div>
+          <div class="ethos-card reveal-up delay-1">
+            <div class="ethos-icon"><i data-lucide="shield"></i></div>
+            <h3>Hospital-Grade Hygiene</h3>
+            <p>Strict autoclave sterilization, disposable barrier protection, and single-use sealed needle cartridges opened in your presence.</p>
+          </div>
+          <div class="ethos-card reveal-up delay-2">
+            <div class="ethos-icon"><i data-lucide="award"></i></div>
+            <h3>Master-Level Execution</h3>
+            <p>Precision needle control and deep technical mastery across fine line, realism, blackwork, and complex cover-up restorations.</p>
+          </div>
+          <div class="ethos-card reveal-up delay-3">
+            <div class="ethos-icon"><i data-lucide="heart-handshake"></i></div>
+            <h3>Private Consultations & Aftercare</h3>
+            <p>Unrushed one-on-one creative planning paired with structured healing guidance to ensure crisp ink retention for decades.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CUSTOMER REVIEWS -->
+    <section id="reviews" class="section bg-obsidian">
+      <div class="container">
+        <div class="section-header-flex reveal-up">
+          <div>
+            <p class="section-eyebrow">05 — Client Testimonials</p>
+            <h2 class="section-title">Verified Google Reviews</h2>
+          </div>
+
+          <div class="rating-summary-box">
+            <div>
+              <div class="stars-row">
+                <i data-lucide="star" class="star-filled"></i>
+                <i data-lucide="star" class="star-filled"></i>
+                <i data-lucide="star" class="star-filled"></i>
+                <i data-lucide="star" class="star-filled"></i>
+                <i data-lucide="star" class="star-filled"></i>
+              </div>
+              <p class="rating-meta">
+                <strong data-bind="ratingScore">[X.X]</strong> / 5.0 based on
+                <span data-bind="totalReviews">[XX]</span> Google Reviews
+              </p>
+            </div>
+            <a href="#" class="google-link" target="_blank" rel="noopener noreferrer" aria-label="View on Google">
+              <i data-lucide="external-link"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="reviews-grid" id="reviews-grid">
+          <!-- Populated via script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CONTACT & BOOKING -->
+    <section id="contact" class="section bg-charcoal border-t">
+      <div class="container contact-grid">
+        <div class="contact-info reveal-up">
+          <p class="section-eyebrow">06 — Reservations & Location</p>
+          <h2 class="section-title">Begin Your Commission</h2>
+          <p class="contact-subtext">
+            Consultations and tattoo sessions are scheduled directly via WhatsApp or telephone.
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <i data-lucide="map-pin" class="icon-gold"></i>
+              <div>
+                <h3>Studio Address</h3>
+                <p data-bind="address">[COMPLETE STREET ADDRESS, CITY, STATE, POSTAL CODE]</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i data-lucide="phone" class="icon-gold"></i>
+              <div>
+                <h3>Direct Telephone</h3>
+                <a href="#" id="phone-link" data-bind="phoneDisplay">[+00 00000 00000]</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i data-lucide="clock" class="icon-gold"></i>
+              <div class="hours-wrapper">
+                <h3>Operating Hours</h3>
+                <ul class="hours-list" id="hours-list">
+                  <!-- Populated via script.js -->
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-buttons">
+            <a href="#" class="btn btn-gold whatsapp-link" target="_blank" rel="noopener noreferrer">
+              <i data-lucide="message-circle"></i>
+              <span>WhatsApp Booking</span>
+            </a>
+            <a href="#" id="instagram-link" class="btn btn-outline-white" target="_blank" rel="noopener noreferrer">
+              <i data-lucide="instagram"></i>
+              <span>Instagram</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="map-panel reveal-up delay-1">
+          <div class="map-frame-wrapper">
+            <iframe
+              id="google-map-iframe"
+              title="Studio Location Map"
+              src=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="map-footer">
+            <span>Open directly in Google Maps for turn-by-turn directions</span>
+            <a href="#" class="google-link map-ext-link" target="_blank" rel="noopener noreferrer">
+              <span>Google Profile</span>
+              <i data-lucide="external-link"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 8. FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand" data-bind="name">[STUDIO NAME]</p>
+          <p class="footer-desc">
+            <span data-bind="tagline">[BESPOKE INK & FINE ART ATELIER]</span> — Bespoke tattoo artistry crafted in a private, sterile studio environment.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#about">Atelier</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Book Session</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Studio Contact</h4>
+          <ul class="footer-contact">
+            <li>
+              <i data-lucide="map-pin" class="icon-gold"></i>
+              <span data-bind="address">[COMPLETE STREET ADDRESS]</span>
+            </li>
+            <li>
+              <i data-lucide="phone" class="icon-gold"></i>
+              <span data-bind="phoneDisplay">[+00 00000 00000]</span>
+            </li>
+            <li>
+              <a href="#" id="footer-instagram" class="footer-social" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="instagram"></i>
+                <span>Follow on Instagram</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="current-year"></span> <span data-bind="name">[STUDIO NAME]</span>. All rights reserved.</p>
+        <p>Strict 18+ Policy · Valid Government ID Required</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX MODAL -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <div class="lightbox-content">
+      <button id="lightbox-close" class="lightbox-close" aria-label="Close Preview">
+        <i data-lucide="x"></i>
+      </button>
+      <div class="lightbox-grid">
+        <div class="lightbox-img-box">
+          <img id="lightbox-img" src="" alt="" />
+        </div>
+        <div class="lightbox-details">
+          <div>
+            <span id="lightbox-category" class="lightbox-cat"></span>
+            <h3 id="lightbox-title" class="lightbox-title"></h3>
+            <p id="lightbox-artist" class="lightbox-artist"></p>
+          </div>
+          <p class="lightbox-note">
+            Executed using single-use sterile equipment and archival-grade pigments.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
